@@ -98,7 +98,7 @@ button {
 }
 
 .info .metaData .tagLists li {
-  padding: calc(var(--padding) / 2);
+  padding-right: calc(var(--padding) / 2);
 }
 
 .info .metaData .tagLists li a {
@@ -110,16 +110,32 @@ button {
 .title .titleTextAndBtn {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .title .titleTextAndBtn .titleBtn {
+  height: 100%;
+  transition: transform 300ms ease-in;
   padding-left: var(--padding);
   color: var(--color-gray);
 }
 
+.title .titleTextAndBtn .titleBtn.clicked {
+  transform: rotate(180deg);
+}
+
 .title .titleTextAndBtn .titleText {
+  display: -webkit-box;
   font-size: var(--font-medium);
 }
+
+.title .titleTextAndBtn .titleText.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .title .viewData {
   font-size: var(--font-small);
   color: var(--color-gray);
@@ -147,7 +163,7 @@ button {
   color: var(--color-blue);
 }
 
-/* Channel Meta - Refactoring ! */
+/* Channel Meta */
 
 .channelData {
   display: flex;
@@ -197,6 +213,7 @@ button {
 .upToNext ul .nextVideo {
   display: flex;
   justify-content: flex-start;
+  max-width: 90%;
 }
 
 .upToNext ul .nextVideo .nextTitle .titleNext {
@@ -210,6 +227,7 @@ button {
 
 .upToNext ul .nextVideo i {
   padding-left: calc(var(--padding) * 3);
+  padding-right: var(--padding);
   color: var(--color-lightGrey);
 }
 
@@ -222,5 +240,6 @@ button {
   .infoAndUpToNext {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 }
