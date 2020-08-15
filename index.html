@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone Project</title>
+    <script
+      src="https://kit.fontawesome.com/fc21f789f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <section class="header">
+      <div class="header_logo">
+        <a href="#" class="header_icon"
+          ><i class="fab fa-youtube"></i> Youtube</a
+        >
+      </div>
+      <div class="header_icons">
+        <ul>
+          <li>
+            <a href="#" class="searchBtn"><i class="fas fa-search"></i></a>
+          </li>
+          <li>
+            <a href="#" class="threeDots"><i class="fas fa-ellipsis-v"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Video Player -->
+    <section class="player">
+      <video src="https://youtu.be/67stn7Pu7s4" controls></video>
+    </section>
+
+    <!-- Video metaData -->
+    <section class="info">
+      <div class="metaData">
+        <!-- Video Taglists -->
+
+        <ul class="tagLists">
+          <li><a href="#">#Lovely</a></li>
+          <li><a href="#">#Mylife</a></li>
+          <li><a href="#">#IloveCoding</a></li>
+        </ul>
+
+        <!-- Video Title -->
+
+        <div class="title">
+            <div class="titleTextAndBtn">
+                <div class="titleText">
+                    저와 함께 웹 Front-end 코딩해요 | Code with me! HTML/CSS/JS Basics |  :)
+                </div>
+      
+                <button class="titleBtn">
+                  <i class="fas fa-caret-down"></i>
+                </button>
+      
+            </div>
+
+          <div class="viewData">
+            2,123 views | 1 hour ago
+          </div>
+
+          <div class="reactions">
+            <ul>
+              <button class="like"><i class="fas fa-thumbs-up " id ="active"></i>22</button>
+              <button class="hate"><i class="fas fa-thumbs-down"></i>0</button>
+              <button class="share"><i class="fas fa-share"></i>Share</button>
+              <button class="save"><i class="fas fa-plus"></i>Save</button>
+              <button class="report"><i class="fas fa-flag"></i>Report</button>
+            </ul>
+          </div>
+        </div>
+
+        <!-- About channel -->
+
+        
+        <div class="channelData">
+            <ul>
+                <div class="profile"></div>
+                <li class="channelPicture"><img src="images/images.png" alt="Girl in a jacket" width="35%" /></li>
+                <div class="channelDescription">
+                    <li class="channelTitle">와라랄ㄹㄹ랄라 코딩해요</li>
+                    <li class="channelSubscribers">1,000 Subscribers</li>
+                </div>
+                
+            </ul>    
+
+        </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Video Recommendation -->
+    <section class="upToNext">
+      <ul>
+        <li class="nextVideo">
+          <img src="images/images.png" alt="Girl in a jacket" width="35%" />
+          <ul class="nextTitle">
+            <div class="titleText">
+              Front-end 코딩 #1. HTML 기본편 (DOM Tree, Semantic Tag...)
+          </div>
+
+          <div class="metaData">진영코딩</div>
+          <div class="metaData">조회수 1.3만회 | 1개월 전</div>
+
+          </ul>
+          <i class="fas fa-ellipsis-v"></i>
+        </li>
+
+        <li class="nextVideo">
+          <img src="images/images.png" alt="Girl in a jacket" width="35%" />
+          <ul class="nextTitle">
+            <div class="titleText">
+              Front-end 코딩 #2. CSS 응용편 (:root 이용, Flexbox...)
+          </div>
+
+          <div class="metaData">진영코딩</div>
+          <div class="metaData">조회수 1.3만회 | 1개월 전</div>
+          </ul>
+          
+          <i class="fas fa-ellipsis-v"></i>
+        </li>
+
+        <li class="nextVideo">
+          <img src="images/images.png" alt="Girl in a jacket" width="35%" />
+          <ul class="nextTitle">
+            <div class="titleText">
+              Front-end 코딩 #3. JavaScript 활용편 (TypeScript, React, Node.js...)
+          </div>
+
+          <div class="metaData">진영코딩</div>
+          <div class="metaData">조회수 1.3만회 | 1개월 전</div>
+          </ul>
+          
+          <i class="fas fa-ellipsis-v"></i>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
