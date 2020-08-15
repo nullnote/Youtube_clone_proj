@@ -80,7 +80,7 @@ button {
 
 .player video {
   width: 100%;
-  max-width: 1000px;
+  max-width: 768px;
 }
 
 .info {
@@ -188,6 +188,12 @@ button {
   margin: 0;
 }
 
+.upToNext ul .nextVideoText {
+  font-size: var(--font-small);
+  color: var(--color-gray);
+  padding: var(--padding) 0;
+}
+
 .upToNext ul .nextVideo {
   display: flex;
   justify-content: flex-start;
@@ -205,4 +211,16 @@ button {
 .upToNext ul .nextVideo i {
   padding-left: calc(var(--padding) * 3);
   color: var(--color-lightGrey);
+}
+
+.infoAndUpToNext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .infoAndUpToNext {
+    display: flex;
+    flex-direction: row;
+  }
 }
